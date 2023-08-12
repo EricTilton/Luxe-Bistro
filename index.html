@@ -271,7 +271,7 @@ United States
               Celebrating Food, Family, and the Joy of Togetherness
             </p>
 
-            <a href="#" class="btn btn-primary slider-reveal">
+            <a href="#menu" class="btn btn-primary slider-reveal">
               <span class="text text-1">View Our Menu</span>
 
               <span class="text text-2" aria-hidden="true">View Our Menu</span>
@@ -297,7 +297,7 @@ United States
               Elegance on Every Plate, Welcome to Luxe Bistro
             </p>
 
-            <a href="#" class="btn btn-primary slider-reveal">
+            <a href="#menu" class="btn btn-primary slider-reveal">
               <span class="text text-1">View Our Menu</span>
 
               <span class="text text-2" aria-hidden="true">View Our Menu</span>
@@ -782,7 +782,7 @@ Inspired by a passion for culinary creativity, our chefs curate a menu that seam
 
           <div class="form reservation-form bg-black-10">
 
-            <form action="" class="form-left">
+            <form id="contactform" onsubmit="return contactformsubmitted()"  class="form-left">
 
               <h2 class="headline-1 text-center">Online Reservation</h2>
 
@@ -792,9 +792,9 @@ Inspired by a passion for culinary creativity, our chefs curate a menu that seam
               </p>
 
               <div class="input-wrapper">
-                <input type="text" name="name" placeholder="Your Name" autocomplete="off" class="input-field">
+                <input required type="text" name="name" placeholder="Your Name" autocomplete="off" class="input-field">
 
-                <input type="tel" name="phone" placeholder="Phone Number" autocomplete="off" class="input-field">
+                <input required type="tel" name="phone" placeholder="Phone Number" autocomplete="off" class="input-field">
               </div>
 
               <div class="input-wrapper">
@@ -802,7 +802,7 @@ Inspired by a passion for culinary creativity, our chefs curate a menu that seam
                 <div class="icon-wrapper">
                   <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
 
-                  <select name="person" class="input-field">
+                  <select required name="person" class="input-field">
                     <option value="1-person">1 Person</option>
                     <option value="2-person">2 Person</option>
                     <option value="3-person">3 Person</option>
@@ -818,7 +818,7 @@ Inspired by a passion for culinary creativity, our chefs curate a menu that seam
                 <div class="icon-wrapper">
                   <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
 
-                  <input type="date" name="reservation-date" class="input-field">
+                  <input required type="date" name="reservation-date" class="input-field">
 
                   <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
                 </div>
@@ -826,7 +826,7 @@ Inspired by a passion for culinary creativity, our chefs curate a menu that seam
                 <div class="icon-wrapper">
                   <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
 
-                  <select name="person" class="input-field">
+                  <select required name="time" class="input-field">
                     
                     <option value="011:00am">11 : 00 am</option>
                     <option value="012:00am">12 : 00 am</option>
@@ -1121,11 +1121,11 @@ Inspired by a passion for culinary creativity, our chefs curate a menu that seam
             Subscribe & Get <span class="span">25% Off Select Appetizers.</span>
           </p>
 
-          <form action="" class="input-wrapper">
+          <form onsubmit="return emailformsubmitted()" class="input-wrapper">
             <div class="icon-wrapper">
               <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
 
-              <input type="email" name="email_address" placeholder="Your email" autocomplete="off" class="input-field">
+              <input required type="email" name="email_address" placeholder="Your email" autocomplete="off" class="input-field">
             </div>
 
             <button type="submit" class="btn btn-secondary">

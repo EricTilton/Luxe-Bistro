@@ -168,3 +168,18 @@ window.addEventListener("mousemove", function (event) {
   }
 
 });
+
+/**
+ * CONTACT FORM SUBMIT
+ */
+function contactformsubmitted(){
+    
+  alert("Thank you for your reservation. Please call ahead if canceling.")
+         
+}
+
+function emailformsubmitted(){
+    
+  alert("Thank you for subscribing!")
+         
+}
