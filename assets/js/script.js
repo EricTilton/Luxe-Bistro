@@ -60,8 +60,10 @@ const hideHeader = function () {
   const isScrollBottom = lastScrollPos < window.scrollY;
   if (isScrollBottom) {
     header.classList.add("hide");
+   
   } else {
     header.classList.remove("hide");
+    
   }
 
   lastScrollPos = window.scrollY;
@@ -71,8 +73,10 @@ window.addEventListener("scroll", function () {
   if (window.scrollY >= 50) {
     header.classList.add("active");
     backTopBtn.classList.add("active");
+    navbar.classList.remove("active");
     hideHeader();
   } else {
+    navbar.classList.remove("active");
     header.classList.remove("active");
     backTopBtn.classList.remove("active");
   }

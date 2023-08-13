@@ -188,7 +188,7 @@ body {
 
 body.loaded { overflow: overlay; }
 
-body.nav-active { overflow: hidden; }
+body.nav-active { overflow: visible; }
 
 ::-webkit-scrollbar { width: 5px; }
 
@@ -761,10 +761,10 @@ body.nav-active { overflow: hidden; }
   z-index: 1;
 }
 
-.overlay.active {
+/* .overlay.active {
   opacity: 1;
   pointer-events: all;
-}
+} */
 
 
 
